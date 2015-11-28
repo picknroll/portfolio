@@ -1,6 +1,7 @@
 {
   "name": "site",
   "dependencies": {
-    "normalize-css": "normalize.css#~3.0.3"
+    "normalize-css": "normalize.css#~3.0.3",
+    "jquery": "1.8"
   }
 }
