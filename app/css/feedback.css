@@ -72,15 +72,6 @@
 	margin-top: 25px;
 }
 
-.clearfix:after {
-    clear: both;
-}
-
-.clearfix:after, .clearfix:before {
-    content: "";
-    display: table;
-}
-
 .buttons-container {
 	width: 340px;
 	margin: 0 auto;

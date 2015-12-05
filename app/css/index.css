@@ -8,9 +8,12 @@
 	box-sizing: content-box;
 }
 
-.avatar-pic {
+.avatar-wrap {
+	width: 153px;
+	height: 153px;
 	border-radius: 50%;
 	border: 10px solid #f3f2f1;
+	overflow: hidden;
 }
 
 .info-list {

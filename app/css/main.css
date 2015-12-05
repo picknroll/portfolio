@@ -85,6 +85,8 @@ body {
 	width: 42px;
     height: 44px;
     background-image: url(../img/spritesheet.png);
+	text-indent: -9999px;
+	font-size: 1px;
 }
 
 .facebook {
@@ -330,14 +332,17 @@ body {
 	background: -webkit-linear-gradient(top,  #f7f6f5 0%,#a9a7a7 0%,#7b7979 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom,  #f7f6f5 0%,#a9a7a7 0%,#7b7979 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f6f5', endColorstr='#7b7979',GradientType=0 ); /* IE6-9 */
+	padding-left: 45px;
+	margin-bottom: 40px;
+}
+
+.title-text {
 	font-size: 24px;
 	font-family: "open_sansregular";
 	color: rgb( 238, 237, 236 );
 	line-height: 55px;
 	text-shadow: 0.5px 0.866px 0px rgb( 102, 101, 101 );
-	font-weight: 600;
-	padding-left: 45px;
-	margin-bottom: 40px;
+	margin: 0;
 }
 
 .empty {
@@ -398,5 +403,12 @@ body {
 	text-align: center;
 }
 
+.clearfix:after {
+    clear: both;
+}
 
+.clearfix:after, .clearfix:before {
+    content: "";
+    display: table;
+}
 

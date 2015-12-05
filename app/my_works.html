@@ -25,16 +25,16 @@
 				</div>
 				<ul class="socials">
 					<li class="socials-item">
-						<a class="socials-link facebook" href="#"></a>
+						<a class="socials-link facebook" href="#">Facebook</a>
 					</li>
 					<li class="socials-item">
-						<a class="socials-link vkontakte" href="http://vk.com/3pt_shot"></a>
+						<a class="socials-link vkontakte" href="http://vk.com/3pt_shot">Vkontakte</a>
 					</li>
 					<li class="socials-item">
-						<a class="socials-link twitter" href="#"></a>
+						<a class="socials-link twitter" href="#">Twitter</a>
 					</li>
 					<li class="socials-item">
-						<a class="socials-link github" href="https://github.com/picknroll"></a>
+						<a class="socials-link github" href="https://github.com/picknroll">Github</a>
 					</li>
 				</ul>
 			</div>
@@ -84,7 +84,7 @@
 				</aside>
 				<div class="about">
 					<section class="about-section">
-						<div class="about-title">Мои работы</div>
+						<div class="about-title"><h2 class="title-text">Мои работы</h2></div>
 						<ul class="projects">
 							<li class="project-item">
 								<div class="preview">
@@ -147,11 +147,32 @@
 								</div>
 							</div>
 						</ul>
-					</section>	
+					</section>
+					<div class="popup-new-project">
+						<div class="exit-wrap clearfix">
+							<a href="#" class="exit-link"></a>	
+						</div>
+						<form action="#" class="new-project-form">
+							<label for="name" class="new-project-label">Название проекта</label>
+							<input type="text" class="new-project-input" id="name" placeholder="Введите название" required>
+							<label for="picture" class="new-project-label">Картинка проекта</label>
+							<div class="upload-box clearfix">
+								<div class="new-project-input fake-input">Загрузите изображение</div>
+								<div class="fake-button">
+									<div class="upload-icon"></div>
+								</div>
+								<input type="file" class="new-project-input file-input" id="url" placeholder="Загрузите изображение" required>
+							</div>
+							<label for="url" class="new-project-label">URL проекта</label>
+							<input type="text" class="new-project-input" id="url" placeholder="Добавьте ссылку" required>
+							<label for="description" class="new-project-label">Описание</label>
+							<textarea class="new-project-textarea" id="description" placeholder="Пара слов о Вашем проекте" required></textarea>
+							<button type="submit" class="submit-button">Добавить</button>
+						</form>
+					</div>	
 				</div>
 			</div>
 		</div>
-
 	</div>
 	<div class="empty"></div>
 	<footer class="footer">
