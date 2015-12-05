@@ -45,7 +45,7 @@
 	display: inline-block;
 	margin-left: 15px;
 	padding: 0 5px 0 8px;
-	background-image: url(/img/label-bg.png);
+	background-image: url(../img/label-bg.png);
 	height: 20px;
 	line-height: 20px;
   	font-size: 9px;
@@ -67,7 +67,7 @@
 	content: " ";
 	width: 9px;
 	height: 20px;
-	background-image: url(/img/label-before.png);
+	background-image: url(../img/label-before.png);
 }
 
 .label:after {
@@ -77,22 +77,19 @@
 	content: " ";
 	width: 4px;
 	height: 20px;
-	background-image: url(/img/label-after.png);
+	background-image: url(../img/label-after.png);
 }
 
 .about-list {
+	list-style-type: none;
 	width: 560px;
-	margin: 20px 40px 0 40px;
-	padding: 0 0 15px 0;
-	border-bottom: 4px solid rgb( 246, 245, 244 );
+	margin: 0 auto;
+	padding: 0;
 }
 
-.about-list:last-child {
-	border: none;
-}
-
-.about-item {
-	list-style-type: none; 
+.about-item { 
+	position: relative;
+	margin-bottom: 40px;
 	padding: 5px 0 0 100px;
 	min-height: 55px;
   	font-size: 15px;
@@ -100,22 +97,38 @@
   	color: rgb( 114, 112, 112 );
 }
 
-.about-item .semibold {
-	display: block;
+.about-item:after {
+	content: '';
+  	position: absolute;
+  	width: 560px;
+  	height: 2px;
+	top: 75px;
+	left: 0;
+  	background-color: #f6f5f4;
+ 	border-radius: 1px;
+ 	box-shadow: inset 0 1px 1px rgba(128, 128, 128, 0.29), 0 0 2.6px 0.5px rgba(251, 251, 251, 0.75);
+}
+
+.about-item:last-child:after {
+	display: none;
+}
+
+.where {
+	font-family: "open_sanssemibold";
 }
 
 .work {
-    background: url(/img/ico-work.png) 0px center no-repeat;
+    background: url(../img/ico-work.png) 0px center no-repeat;
 }
 
 .school {
-	background: url(/img/ico-school.png) 0px center no-repeat;
+	background: url(../img/ico-school.png) 0px center no-repeat;
 }
 
 .graduate {
-	background: url(/img/ico-graduate.png) 0px center no-repeat;
+	background: url(../img/ico-graduate.png) 0px center no-repeat;
 }
 
 .course {
-	background: url(/img/ico-course.png) 0px center no-repeat;
+	background: url(../img/ico-course.png) 0px center no-repeat;
 }

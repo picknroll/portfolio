@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lt IE 9]>
+  		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+  	<![endif]-->
+	<title>Мои работы</title>
+	<link rel="stylesheet" href="fonts/fonts.css">
+	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/feedback.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="logo">
+					<a href="index.html"><img src="img/logo.png" alt="LoftSchool.От мыслителя к создателю" class="logo-pic"></a>
+					<div class="logo-pic-text">
+						LoftSchool.От мыслителя к создателю
+					</div>
+				</div>
+				<ul class="socials">
+					<li class="socials-item">
+						<a class="socials-link facebook" href="#"></a>
+					</li>
+					<li class="socials-item">
+						<a class="socials-link vkontakte" href="http://vk.com/3pt_shot"></a>
+					</li>
+					<li class="socials-item">
+						<a class="socials-link twitter" href="#"></a>
+					</li>
+					<li class="socials-item">
+						<a class="socials-link github" href="https://github.com/picknroll"></a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<div class="main-content">
+			<div class="container">
+				<aside class="sidebar">
+					<nav class="nav">
+						<ul class="nav-list">
+							<li class="nav-item">
+								<a href="index.html" class="nav-link">Обо мне</a>
+							</li>
+							<li class="nav-item">
+								<a href="my_works.html" class="nav-link">Мои работы</a>
+							</li>
+							<li class="nav-item nav-item-active">
+								<a href="feedback.html" class="nav-link nav-link-active">Обратная связь</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="contacts">
+						<div class="contacts-title">Контакты</div>
+						<ul class="contacts-list">
+							<li class="contacts-item">
+								<a href="mailto:like_mike@ukr.net" class="contacts-link">
+									<div class="email"></div
+									><div class="separator"></div>
+									like_mike@ukr.net
+								</a>
+							</li>
+							<li class="contacts-item">
+								<a href="callto:+380636054905" class="contacts-link">
+									<div class="phone"></div
+									><div class="separator"></div>
+									+380636054905
+								</a>
+							</li>
+							<li class="contacts-item">
+								<a href="skype:balaban23_23?chat" class="contacts-link">
+									<div class="skype"></div
+									><div class="separator"></div>
+									balaban23_23
+								</a>
+							</li>
+						</ul>
+					</div>
+				</aside>
+				<div class="about">
+					<section class="about-section">
+						<div class="about-title">У Вас интересный проект? Напишите мне</div>
+						<form action="#" class="feedback-form">
+							<div class="name-container">
+								<label for="name" class="feedback-label">Имя</label>
+								<input type="text" class="feedback-input" id="name" placeholder="Как к Вам обращаться" required>
+							</div>
+							<div class="email-container">
+								<label for="email" class="feedback-label">Email</label>
+								<input type="text" class="feedback-input" id="email" placeholder="Куда мне писать" required>
+							</div>
+							<div class="message-container">
+								<label for="message" class="feedback-label">Сообщение</label>
+								<textarea class="feedback-textarea" id="message" placeholder="Кратко в чем суть" required></textarea>
+							</div>
+							<div class="captcha-container clearfix">
+								<label for="captcha" class="feedback-label">Введите код, указанный на картинке</label>
+								<div class="captcha-wrap">
+									<img src="img/captcha.png" alt="captcha here" class="captcha-img">
+								</div>
+								<input type="text" id="captcha" class="captcha-input" placeholder="Введите код" required>
+							</div>
+							<div class="buttons-container clearfix">
+								<button type="submit" class="submit-button">Отправить</button>
+								<button type="reset" class="reset-button">Очистить</button>
+							</div>
+						</form>						
+					</section>	
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="empty"></div>
+	<footer class="footer">
+		<div class="container">
+			<a href="#" class="authorization">вход</a>
+			<div class="copyright">
+				&#169; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его!
+			</div>
+		</div>
+	</footer>
+
+	<script src="bower/jquery/jquery.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

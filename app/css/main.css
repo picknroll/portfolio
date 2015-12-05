@@ -4,8 +4,8 @@ body, html {
 }
 
 body {
-	background: url('/img/background.png') repeat-y;
-	width: 1400px;
+	background: url('../img/background.png') no-repeat center center fixed;
+	background-size: cover;
 }
 
 * {
@@ -16,6 +16,8 @@ body {
 	overflow: hidden;
 	position: relative;
 	min-height: 100%;
+	min-width: 960px;
+	height: auto;
 }
 
 .header {
@@ -39,9 +41,17 @@ body {
 	background-image: url('data:image/png;base64,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');
 }
 
+.header .container {
+	position: relative;
+	height: 100%;
+	min-width: 960px;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
 .logo {
-	float: left;
-	margin-left: 110px;
+	position: absolute;
+	left: 110px;
 	line-height: 90px;
 }
 
@@ -55,11 +65,10 @@ body {
 }
 
 .socials {
-	position: relative;
+	position: absolute;
 	display: inline-block;
 	line-height: 90px;
-	float: right;
-	margin-right: 99px;
+	right: 100px;
 }
 
 .socials-item {
@@ -75,7 +84,7 @@ body {
 	display: block;
 	width: 42px;
     height: 44px;
-    background-image: url(/img/spritesheet.png);
+    background-image: url(../img/spritesheet.png);
 }
 
 .facebook {
@@ -110,9 +119,13 @@ body {
 	background-position: -121px -59px;
 }
 
+.main-content .container {
+	width: 960px;
+	margin: 0 auto;
+}
+
 .sidebar {
 	float: left;
-	margin: 0 60px 0 220px;
 	width: 250px;
 }
 
@@ -245,9 +258,12 @@ body {
 }
 
 .contacts-link {
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 	width: 250px;
 	height: 38px;
-	display: inline-block;
 	text-decoration: none;
 	line-height: 38px;
 	font-size: 14px;
@@ -262,7 +278,7 @@ body {
 
 .email, .phone, .skype, .separator {
 	display: inline-block;
-	background-image: url(/img/spritesheet.png);
+	background-image: url(../img/spritesheet.png);
 	vertical-align: middle;
 	margin: 0 12px 0 18px;
 }
@@ -295,7 +311,7 @@ body {
 
 .about-section {
 	width: 650px;
-	margin: 0 220px 36px 0;
+	margin-bottom: 36px;
 	background: #f7f6f5; /* Old browsers */
 	background: -moz-linear-gradient(top,  #f7f6f5 0%, #f0eeed 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top,  #f7f6f5 0%,#f0eeed 100%); /* Chrome10-25,Safari5.1-6 */
@@ -304,7 +320,6 @@ body {
 	float: right;
 	border-radius: 5px;
 	overflow: hidden;
-	padding-bottom: 20px;
 	border: 1px solid #bfbfbf;
 }
 
@@ -316,7 +331,7 @@ body {
 	background: linear-gradient(to bottom,  #f7f6f5 0%,#a9a7a7 0%,#7b7979 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f6f5', endColorstr='#7b7979',GradientType=0 ); /* IE6-9 */
 	font-size: 24px;
-	font-family: "Open Sans";
+	font-family: "open_sansregular";
 	color: rgb( 238, 237, 236 );
 	line-height: 55px;
 	text-shadow: 0.5px 0.866px 0px rgb( 102, 101, 101 );
@@ -325,11 +340,8 @@ body {
 	margin-bottom: 40px;
 }
 
-
-
 .empty {
 	height: 60px;
-	margin-bottom: 40px;
 }
 
 .footer {
@@ -344,7 +356,15 @@ body {
 	box-shadow: 0px 2px 1px 0px rgb( 9, 9, 9 );
 }
 
+.footer .container {
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+}
+
 .authorization {
+	position: absolute;
+	left: 160px;
 	height: 60px;
 	display: inline-block;
 	text-decoration: none;
@@ -355,21 +375,21 @@ body {
 	text-align: left;
 	padding-left: 25px;
 	text-shadow: 0.5px 0.866px 1px rgb( 255, 255, 255 );
-	margin: 0 60px 0 390px;
-	background: url(/img/ico-locked.png);
+	background: url(../img/ico-locked.png);
 	background-size: auto;
 	background-repeat: no-repeat;
 	background-position: left center;
 }
 
 .authorization:hover {
-	background: url(/img/ico-unlocked.png);
+	background: url(../img/ico-unlocked.png);
 	background-size: auto;
 	background-repeat: no-repeat;
 	background-position: left center;
 }
 
 .copyright {
+	margin-left: 280px;
 	display: inline-block;
 	line-height: 60px;
 	font-size: 12px;

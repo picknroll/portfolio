@@ -1,6 +1,7 @@
 .projects {
-	padding: 0 10px 0 40px;
-	min-height: 840px;
+	padding: 0 0 0 10px;
+	min-height: 745px;
+	margin: 0;
 }
 
 .project-item {
@@ -11,7 +12,7 @@
 	border: 1px solid #bbbbbb;
 	vertical-align: top;
 	box-shadow: 0px 2px 1px 0px rgba( 9, 9, 9, 0.07 );
-	margin: 0 30px 35px 0;
+	margin: 0 0 35px 30px;
 }
 
 .preview {
@@ -72,6 +73,7 @@
 	border: 1px solid #c2c3c3;
 	text-align: center;
   	box-shadow: 0px 2px 1px 0px rgba( 9, 9, 9, 0.07 );
+  	margin-left: 30px;
 }
 
 .project-new-icon {
@@ -79,7 +81,7 @@
 	height: 133px;
 	width: 166px;
 	position: absolute;
-	background: url(/img/ico-project.png) no-repeat center 40%;
+	background: url(../img/ico-project.png) no-repeat center 40%;
 }
 
 .project-new-link {
