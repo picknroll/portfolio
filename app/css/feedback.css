@@ -124,3 +124,7 @@
 	background: linear-gradient(to bottom,  #f7f6f5 0%,#e8e7e7 0%,#bebdbd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f6f5', endColorstr='#bebdbd',GradientType=0 ); /* IE6-9 */
 }
+
+.has-error {
+	border: 1px solid #e0ad99;
+}

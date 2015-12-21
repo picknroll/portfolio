@@ -1,4 +1,4 @@
-var newProject = function() {
+var feedback = function() {
 
 	var init = function() {
 		_setUpListners();
@@ -6,15 +6,12 @@ var newProject = function() {
 	};
 
 	var _setUpListners = function() {
-		$('#project-new-link').on('click', _showModal);
-		$('#new-project-form').on('submit', _addProject);
+		$('#feedback-form').on('submit', _addProject);
 	};
 
 	var _showModal = function(ev) {
 		ev.preventDefault();
-		$('#popup-new-project').bPopup({
-			onClose: function() {$('#new-project-form').trigger('reset');}
-		});
+		$('#popup-new-project').bPopup();
 	};
 
 	var _addProject = function(ev) {
@@ -26,7 +23,7 @@ var newProject = function() {
 		validation.validateForm(form);
 	};
 
-	var _aaa = function(ev) {
+	var _aaa = function() {
 		console.log('aaa');
 	};
 
@@ -36,4 +33,4 @@ var newProject = function() {
 
 }();
 
-newProject.init();
+feedback.init();

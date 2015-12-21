@@ -10,8 +10,29 @@
 	<title>Мои работы</title>
 	<link rel="stylesheet" href="fonts/fonts.css">
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
+	<link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/my_works.css">
+	<!-- Фавикон -->
+	<link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="favicons/favicon-194x194.png" sizes="194x194">
+	<link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="favicons/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="favicons/manifest.json">
+	<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="favicons/mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 </head>
 <body>
 	<div class="wrapper">
@@ -152,21 +173,21 @@
 						<div class="exit-wrap clearfix">
 							<a href="#" class="exit-link b-close"></a>	
 						</div>
-						<form action="#" class="new-project-form">
+						<form class="new-project-form" id="new-project-form">
 							<label for="name" class="new-project-label">Название проекта</label>
-							<input type="text" class="new-project-input" id="name" placeholder="Введите название" required>
+							<input type="text" class="new-project-input" id="name" placeholder="Введите название"  qtip-position="left" qtip-content="введите название">
 							<label for="picture" class="new-project-label">Картинка проекта</label>
 							<div class="upload-box clearfix">
-								<div class="new-project-input fake-input">Загрузите изображение</div>
+								<div class="new-project-input fake-input" id="fake-input">Загрузите изображение</div>
 								<div class="fake-button">
 									<div class="upload-icon"></div>
 								</div>
-								<input type="file" class="new-project-input file-input" id="url" placeholder="Загрузите изображение" required>
+								<input type="file" class="new-project-input file-input" id="url" placeholder="Загрузите изображение" qtip-position="left" qtip-content="изображение">
 							</div>
 							<label for="url" class="new-project-label">URL проекта</label>
-							<input type="text" class="new-project-input" id="url" placeholder="Добавьте ссылку" required>
+							<input type="text" class="new-project-input" id="url" placeholder="Добавьте ссылку" qtip-position="left" qtip-content="ссылка на проект">
 							<label for="description" class="new-project-label">Описание</label>
-							<textarea class="new-project-textarea" id="description" placeholder="Пара слов о Вашем проекте" required></textarea>
+							<textarea class="new-project-textarea" id="description" placeholder="Пара слов о Вашем проекте" qtip-position="left" qtip-content="описание проекта"></textarea>
 							<button type="submit" class="submit-button">Добавить</button>
 						</form>
 					</div>	
@@ -185,8 +206,10 @@
 	</footer>
 
 	<script src="bower/jquery/jquery.js"></script>
+	<script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
 	<script src="bower/bPopup/jquery.bpopup.js"></script>
-	<script src="js/main.js"></script>
+	<script src="bower/qtip2/jquery.qtip.js"></script>
 	<script src="js/new_project.js"></script>
+	<script src="js/validation.js"></script>
 </body>
 </html>
